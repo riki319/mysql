@@ -1,10 +1,8 @@
 import MySQLdb
 
+from config import data
 
-db = MySQLdb.connect(host="localhost",
-		    user="pwaqo",
-		    passwd="pass",
-		    db='example')
+db = MySQLdb.connect(**data)
 
 cur = db.cursor()
 
